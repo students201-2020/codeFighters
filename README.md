@@ -11,4 +11,6 @@ Feb 22, Saturday time 1248 - updated the folde structor of codeFighters. Added i
 >>>>>>> f24c1dfb1a8ffa215bfee245e9f1ee23a8441383
 
 Feb 24, Monday 1049. Made changes to apps.js, style.css, and html. Also uploads project prep #4. 
-![This is our wire]
+![This is our wire](./img/wireframe.png)
+![This is our domain model](./img/domainModeling.jpg)
+[User Stories](https://repl.it/@jpchato/User-stories)
