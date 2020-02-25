@@ -2,7 +2,7 @@
 var player = document.getElementById('player');
 var boss = document.getElementById('boss');
 var villian2 = {
-  img : 'image/boss 2.png',
+  img : 'image/',
   name : boss,
   attack : 20,
   hp : 100,
@@ -80,7 +80,7 @@ function game () {
         alert('player' + selectedFighter.hp + ', boss' + villian2.hp);
         } 
     } 
-    if (selectedFighter.hp < 0) {
+    if (selectedFighter.hp > 0) {
       alert('you win');    
     } else {  
       alert('you lost');  

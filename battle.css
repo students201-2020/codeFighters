@@ -1,0 +1,18 @@
+img {
+
+}
+
+section img:first-child {
+  float: left;
+}
+section img:last-child{
+  float: right;
+}
+
+article button:first-child{
+  float: left;
+}
+
+article button:last-child{
+  float: right;
+}

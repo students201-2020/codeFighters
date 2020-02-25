@@ -2,7 +2,7 @@
 var player = document.getElementById('player');
 var boss = document.getElementById('boss');
 var villian = {
-  img : 'image/pngfuel.com (1).png',
+  img : './image/boss2.jpeg',
   name : boss,
   attack : 20,
   hp : 100,

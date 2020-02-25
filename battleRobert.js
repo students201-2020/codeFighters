@@ -80,7 +80,7 @@ function game () {
         alert('player' + selectedFighter.hp + ', boss' + villian.hp);
         } 
     } 
-    if (selectedFighter.hp < 0) {
+    if (selectedFighter.hp > 0) {
       alert('you win');
       alert('click next to fight the evil boss Josh');    
     } else {  
