@@ -13,8 +13,8 @@ function getFighter(key) {
   return JSON.parse(selectedFighter);
 }
 function rendervillan3() {
-  boss.setAttribute('src', villian2.img);
-  boss.setAttribute('alt', villian2.name); 
+  boss.setAttribute('src', villian3.img);
+  boss.setAttribute('alt', villian3.name); 
 }
 
 function renderFighter() {
@@ -76,7 +76,7 @@ function game () {
         playerAttack();
         alert('player' + selectedFighter.hp + ', boss' + villian3.hp);
         } else {
-        villian2Attack();
+        villian3Attack();
         alert('player' + selectedFighter.hp + ', boss' + villian3.hp);
         } 
     } 
