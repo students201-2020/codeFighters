@@ -1,22 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Playa Arena</title>
+  <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+  <link rel="icon" href="./image/pagefavicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <form id="form">
-    <input type="text" name="name">
-    <input type="text" name="text">
-    <button type="submit">Create Note</button>
-  </form>
-  <ul id="data">
+  <header>
+    
+    <img src="./image/frontpage.png" atl=""> 
+  </header>
+  <main>
+    <h1> Heroes Of Code</h1>
+    <div id="boss-container"><!-- boss container-->
+      <img src="./image/boss2noface.png" alt="Boss 2 cartoon pictures">
+      <img id="mainbossimg "src="./image/boss1noface.png" alt="Boss 1 cartoon pictures">
+      <img src="./image/boss3noface.png" alt="Boss 3 cartoon pictures">
+      
+    </div>  
+    <h2>CHOOSE YOUR FIGHTER</h2>
 
-  </ul>
-  <script src="apps.js"></script>
+    <!--  Player container-->
+    <div id="fighter"> 
+        
+        <div>
+          <img id="fighterOne" src="">
+        <ul id="fighterOneStats"></ul>
+        </div>
+        
+        <div>
+          <img id="fighterTwo" src="" alt="">
+        <ul id="fighterTwoStats"></ul>
+        </div>
+
+      <div>
+        <img id="fighterThree" src="">
+        <ul id="fighterThreeStats"></ul>
+      </div>   
+      
+      <div>
+        <img id="fighterFour" src="">
+        <ul id="fighterFourStats"></ul>
+      </div>    
+        
+      </div>
+      <div id="button">
+        <p><a  href="battleRobert.html" ><button class="tab blink">Enter IF You're BRAVE</button></a>Click to ENTER Battle Arena</p>
+
+      </div>
+      
+  </main>
+  <footer>
+    
+  </footer>
+  <script src="app.js"></script>
+  <script src="battle.js"></script>
 </body>
-
 </html>
