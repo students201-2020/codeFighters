@@ -68,11 +68,9 @@ for(var i = 0; i < allFighters.length; i++) {
     setProductData ('fighter',allFighters[i])
   }
  }
+ alert('Click the Enter button to move to the battlefield');
 }
 // console.log(localStorage);
 fighterOne.addEventListener('click' , handleClicks);
 fighterTwo.addEventListener('click' , handleClicks);
 fighterThree.addEventListener('click' , handleClicks);
-
-
-
