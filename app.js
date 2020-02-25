@@ -17,10 +17,9 @@ function Fighter (img,name,attack,hp) {
   allFighters.push(this);
 }
 
-var FighterA = new Fighter('./image/assassin.jpeg','Assassin',20,100);
-var FighterB = new Fighter('./image/knight.jpeg','Knight',10,100);
-var FighterC = new Fighter('./image/brawler.jpeg','Brawler',20, 100);
-var FighterC = new Fighter('./image/ninja.jpeg','Ninja',10, 100);
+var FighterA = new Fighter('image/ryu.png','FighterA',20,100);
+var FighterB = new Fighter('https://ih0.redbubble.net/image.459625230.1263/flat,1000x1000,075,f.u1.jpg','FighterB',10,100);
+var FighterC = new Fighter('image/pngfuel.com.png','FighterC',20, 100);
 
 
 
@@ -75,3 +74,6 @@ for(var i = 0; i < allFighters.length; i++) {
 fighterOne.addEventListener('click' , handleClicks);
 fighterTwo.addEventListener('click' , handleClicks);
 fighterThree.addEventListener('click' , handleClicks);
+
+
+

@@ -86,3 +86,21 @@ function game () {
       alert('you lost');  
     }     
   }
+    
+  
+    
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
