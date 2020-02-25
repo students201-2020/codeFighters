@@ -1,0 +1,147 @@
+body{
+  background-image: url(https://media.giphy.com/media/BW51OCstarPBm/giphy.gif);
+  height: calc(100%vw);
+}
+
+header{
+  height: 30px;
+  width: auto;
+}
+
+header >img{
+  border-radius: 30px;
+}
+
+h1, h2, p{
+  text-align: center;
+  font-family: 'Trade Winds';
+}
+h1{
+  font-size: 60px;
+  color: rgba(242, 199, 199, 0.6);
+  text-shadow: seashell 10px;
+
+}
+h2, p{
+  padding: 20px;
+  font-size: 40px;
+  color: rgba(55, 80, 227, 0.6);
+}
+p{
+  color: azure;
+}
+
+img{
+  height: 200px;
+  margin: 10px;
+}
+
+main{
+  height: 1000px;
+  width: 960px;
+  margin: 0px auto;
+  border: 3px solid whitesmoke;
+  border-radius: 10px;
+}
+#boss-container{
+  margin: 0px auto;
+  border: 3px solid rgba(55, 80, 227, 0.6);
+  height: 400px;
+  width: 756px;
+  border-radius: 0, 80px, 0, 80px;
+}
+#boss-container > img{
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  height: 300px;
+}
+#boss-container > img:nth-child(2){
+  text-align: center;
+  height: 380px;
+}
+
+
+#mainbossimg{
+  height: 250px;
+}
+
+#fighter{
+  margin: 0px auto;
+  border: 3px solid ;
+  height: 320px;
+  width: 760px;
+  border-radius: 80px ,0 ,80px ,0;
+}
+li{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+#fighter > img{
+  height: 200px;
+}
+#fighter > div{
+  display: inline-block;
+  margin: 0px auto;
+  border: 3px dashed red;
+  height: 300px;
+  width: 180px;
+
+}
+#button{
+  border:2px solid;
+  margin:0px auto;
+  
+}
+
+button{
+  color: rgb(255, 255, 255);
+  font-size: large;
+  background-color: rgb(20,246,240);
+  font-family: tranwinds;
+  border-radius: 10px;
+  height: 90px;
+  width: 200px;
+}
+
+
+
+
+.blink {
+	-webkit-animation: blink 2.35s linear infinite;
+	-moz-animation: blink 2.35s linear infinite;
+	-ms-animation: blink 2.35s linear infinite;
+	-o-animation: blink 2.35s linear infinite;
+	 animation: blink 2.35s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}

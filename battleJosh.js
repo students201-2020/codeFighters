@@ -49,17 +49,17 @@ function QuestionsConstructor (question, answer){
   answerArray.push(this.answer)
 }
 
-new QuestionsConstructor ('Is `:last-child` a standard CSS pseudo-class?', 'yes');
-new QuestionsConstructor ('Is color `textcolor` used to change the text color of an element?', 'no');
-new QuestionsConstructor ('Does a JavaScript function `expression` load when the interpreter reaches that line of code?', 'yes');
-new QuestionsConstructor ('Does a JavaScript function `declaration` load when the interpreter reaches that line of code?', 'no');
-new QuestionsConstructor ('Is `:border-radius` a standard CSS pseudo-class?', 'no');
-new QuestionsConstructor ('Are HTML attributes and CSS declarations examples of key-value pairs?', 'yes');
+new QuestionsConstructor ('Does `&&` represent the conitional `or`?', 'no');
+new QuestionsConstructor ('Does `||` represent the conditional `and`?', 'no');
+new QuestionsConstructor ('Do you use the `<script></script>` tags to link JavaScript to HTML?', 'yes');
+new QuestionsConstructor ('Can you push from a function into an array?', 'yes');
+new QuestionsConstructor ('Can you use `git checkout -b filename` to create a new branch and move to it?', 'yes');
+new QuestionsConstructor ('Can you use a for loop to cycle through an array?', 'yes');
 new QuestionsConstructor ('Does the content of inline elemnts determine their default width?', 'yes');
-new QuestionsConstructor ('Do all HTML elements with inline display change to block display?', 'no');
-new QuestionsConstructor ('Can an inline element have margin?', 'yes');
-new QuestionsConstructor ('Is margin>border>padding>content, the outside-in ordering of the CSS box model?', 'yes');
-new QuestionsConstructor ('Is a function inside of an object called a method?', 'yes');
+new QuestionsConstructor ('While loops are used when the number of iterations are known?', 'no');
+new QuestionsConstructor ('For loops are used when the number of iterations are unknown?', 'no');
+new QuestionsConstructor ('Does Math.floor round down the number it is used with?', 'yes');
+new QuestionsConstructor ('Will Math.ceil(1.2) return 2 in the console?', 'yes');
 new QuestionsConstructor ('Can you put a function inside a constructor function?', 'yes');
 new QuestionsConstructor ('Do JavaScript objects inherit properties and methods from a prototype?', 'yes');
 new QuestionsConstructor ('Can arrays hold functions?', 'yes');

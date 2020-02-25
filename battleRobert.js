@@ -49,18 +49,18 @@ function QuestionsConstructor (question, answer){
   answerArray.push(this.answer)
 }
 
-new QuestionsConstructor ('Is `:last-child` a standard CSS pseudo-class?', 'yes');
-new QuestionsConstructor ('Is color `textcolor` used to change the text color of an element?', 'no');
-new QuestionsConstructor ('Does a JavaScript function `expression` load when the interpreter reaches that line of code?', 'yes');
-new QuestionsConstructor ('Does a JavaScript function `declaration` load when the interpreter reaches that line of code?', 'no');
-new QuestionsConstructor ('Is `:border-radius` a standard CSS pseudo-class?', 'no');
-new QuestionsConstructor ('Are HTML attributes and CSS declarations examples of key-value pairs?', 'yes');
-new QuestionsConstructor ('Does the content of inline elemnts determine their default width?', 'yes');
-new QuestionsConstructor ('Do all HTML elements with inline display change to block display?', 'no');
-new QuestionsConstructor ('Can an inline element have margin?', 'yes');
-new QuestionsConstructor ('Is margin>border>padding>content, the outside-in ordering of the CSS box model?', 'yes');
-new QuestionsConstructor ('Is a function inside of an object called a method?', 'yes');
-new QuestionsConstructor ('Can you put a function inside a constructor function?', 'yes');
+new QuestionsConstructor ('Is Java the same as JavaScript?', 'no');
+new QuestionsConstructor ('Is this the proper way to use a p tag `<p></p>`?', 'yes');
+new QuestionsConstructor ('Does HTML stand for hyper typed media language?', 'no');
+new QuestionsConstructor ('Does CSS stand for Cascading Style Sheets?', 'yes');
+new QuestionsConstructor ('Does Math.random() generate a random number between 1 and 100?', 'no');
+new QuestionsConstructor ('Can LinkedIn be used as a networking tool?', 'yes');
+new QuestionsConstructor ('Does Math.random() generate a random number between 0 and 1?', 'yes');
+new QuestionsConstructor ('Would you not want to use HTML5 because it offers you less options within the HTML document?', 'no');
+new QuestionsConstructor ('Can you add elements to HTML using JavaScript?', 'yes');
+new QuestionsConstructor ('Can you style an element using HTML?', 'yes');
+new QuestionsConstructor ('Can `break` be used to exit a loop?', 'yes');
+new QuestionsConstructor ('Can you use the console to solve basic arithmetic problems?', 'yes');
 new QuestionsConstructor ('Do JavaScript objects inherit properties and methods from a prototype?', 'yes');
 new QuestionsConstructor ('Can arrays hold functions?', 'yes');
 new QuestionsConstructor ('Are strings, booleans, and numbers examples of primitives in JavaScript?', 'yes');

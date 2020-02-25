@@ -7,6 +7,10 @@ var fighterTwo = document.getElementById('fighterTwo');
 var fighterTwoStats = document.getElementById('fighterTwoStats');
 
 var fighterThree = document.getElementById('fighterThree');
+var fighterThreeStats = document.getElementById('fighterThreeStats');
+
+var fighterFour = document.getElementById('fighterFour');
+var fighterFourStats = document.getElementById('fighterFourStats');
 
 ////// FIGHTER CONSTRUCTOR FUNCTION ////////////
 function Fighter (img,name,attack,hp) {
@@ -17,9 +21,10 @@ function Fighter (img,name,attack,hp) {
   allFighters.push(this);
 }
 
-var FighterA = new Fighter('image/ryu.png','FighterA',20,100);
-var FighterB = new Fighter('https://ih0.redbubble.net/image.459625230.1263/flat,1000x1000,075,f.u1.jpg','FighterB',10,100);
-var FighterC = new Fighter('image/pngfuel.com.png','FighterC',20, 100);
+var FighterA = new Fighter('./image/knight.jpeg','FighterA',20,100);
+var FighterB = new Fighter('./image/ninja.jpeg','FighterB',20,100);
+var FighterC = new Fighter('./image/assassin.jpeg','FighterC',20, 100);
+var FighterD = new Fighter('./image/brawler.jpeg','FighterD',20, 100);
 
 
 
@@ -50,7 +55,7 @@ function renderFighter (fighter,avatar,stat) {
 renderFighter(FighterA, fighterOne, fighterOneStats);
 renderFighter(FighterB, fighterTwo,fighterTwoStats);
 renderFighter(FighterC, fighterThree,fighterThreeStats);
-
+renderFighter(FighterD, fighterFour, fighterFourStats);
 
 // ///////////////// sets data to the local storage ////////////////////////
 function setProductData (key,data) {
@@ -74,6 +79,7 @@ for(var i = 0; i < allFighters.length; i++) {
 fighterOne.addEventListener('click' , handleClicks);
 fighterTwo.addEventListener('click' , handleClicks);
 fighterThree.addEventListener('click' , handleClicks);
+fighterFour.addEventListener('click', handleClicks);
 
 
 
