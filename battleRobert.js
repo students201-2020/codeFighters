@@ -1,5 +1,7 @@
 'use strict';
+var playerIcon = document.getElementById('playerIcon');
 var player = document.getElementById('player');
+var bossIcon = document.getElementById('bossIcon');
 var boss = document.getElementById('boss');
 var villian = {
   img : 'image/boss3.jpeg',
@@ -15,15 +17,20 @@ function getFighter(key) {
 }
 function rendervillan() {
   boss.setAttribute('src', villian.avatar);
-  boss.setAttribute('alt', villian.name); 
+  boss.setAttribute('alt', villian.name);
+  bossIcon.setAttribute('src',villian.img);
+  bossIcon.setAttribute('alt', 'icon') 
 }
 
 function renderFighter() {
 
   console.log(selectedFighter);       
   player.setAttribute('src', selectedFighter.avatar);
-  player.setAttribute('alt', selectedFighter.name);  
+  player.setAttribute('alt', selectedFighter.name);
+  playerIcon.setAttribute('src',selectedFighter.img);
+  playerIcon.setAttribute('alt', 'icon')   
 }
+
 rendervillan();
 renderFighter();
 
