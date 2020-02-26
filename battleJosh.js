@@ -1,6 +1,7 @@
 'use strict';
 var player = document.getElementById('player');
 var boss = document.getElementById('boss');
+var buttonKiller = document.getElementById('buttonkiller');
 var villian2 = {
   img : 'image/boss2.jpeg',
   avatar : 'image/josh avatar.png',
@@ -84,6 +85,7 @@ function game () {
     if (selectedFighter.hp > 0) {
       alert('you win');    
     } else {  
+      buttonKiller.remove();
       alert('you lost');  
     }     
   }

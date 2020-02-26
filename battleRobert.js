@@ -1,6 +1,7 @@
 'use strict';
 var player = document.getElementById('player');
 var boss = document.getElementById('boss');
+var buttonKiller = document.getElementById('buttonkiller')
 var villian = {
   img : 'image/boss3.jpeg',
   avatar : 'image/Robert avatar.png',
@@ -85,6 +86,7 @@ function game () {
       alert('you win');
       alert('click next to fight the evil boss Josh');    
     } else {  
+      buttonKiller.remove();
       alert('you lost'); 
       alert('Hit the Back button to return to the homepage'); 
     }     

@@ -80,8 +80,10 @@ article {
 }
 
 article button {
-  text-align: center;
-  position: relative;
+  border-radius: 0, 10px, 0, 10px;
+  margin: 0px auto;
+  /* text-align: center; */
+  /* position: relative; */
   width: 150px;
   height: 100px;
   background-color: black;
