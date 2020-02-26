@@ -81,9 +81,9 @@ function game () {
         } 
     } 
     if (selectedFighter.hp > 0) {
-      alert('you win');    
+      alert('You win, however you still need to pass the entrance exam for 301 to get past me!');    
     } else {  
-      alert('you lost');  
+      alert('You lose, you have to take 201 again!');  
     }     
   }
     

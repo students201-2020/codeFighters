@@ -21,10 +21,10 @@ function Fighter (img,name,attack,hp) {
   allFighters.push(this);
 }
 
-var FighterA = new Fighter('./image/knight.jpeg','FighterA',20,100);
-var FighterB = new Fighter('./image/ninja.jpeg','FighterB',20,100);
-var FighterC = new Fighter('./image/assassin.jpeg','FighterC',20, 100);
-var FighterD = new Fighter('./image/brawler.jpeg','FighterD',20, 100);
+var FighterA = new Fighter('./image/knight.jpeg','Knight',20,100);
+var FighterB = new Fighter('./image/ninja.jpeg','Ninja',20,100);
+var FighterC = new Fighter('./image/assassin.jpeg','Assassin',20, 100);
+var FighterD = new Fighter('./image/brawler.jpeg','Brawler',20, 100);
 
 
 
