@@ -13,29 +13,30 @@ var fighterFour = document.getElementById('fighterFour');
 var fighterFourStats = document.getElementById('fighterFourStats');
 
 ////// FIGHTER CONSTRUCTOR FUNCTION ////////////
-function Fighter (img,name,attack,hp) {
+function Fighter (img,avatar,name,attack,hp) {
   this.img = img;
+  this.avatar = avatar;
   this.name = name;
   this.attack = attack;
   this.hp = hp;
   allFighters.push(this);
 }
 
-var FighterA = new Fighter('./image/knight.jpeg','Knight', 30, 120);
-var FighterB = new Fighter('./image/ninja.jpeg','Ninja', 40, 80);
-var FighterC = new Fighter('./image/assassin.jpeg','Assassin', 50, 60);
-var FighterD = new Fighter('./image/brawler.jpeg','Brawler', 30, 100);
+var FighterA = new Fighter('./image/knight.jpeg','image/joe avatar.png','Knight', 30, 120);
+var FighterB = new Fighter('./image/ninja.jpeg','image/Robs avatar.png','Ninja', 40, 80);
+var FighterC = new Fighter('./image/assassin.jpeg','image/jesse avatar.png', 'Assassin',50, 60);
+var FighterD = new Fighter('./image/brawler.jpeg','image/yasir avatar.png','Brawler', 30, 100);
 
 
 
 /////// RENDERS ALL FIGHTERS AND THEIR STATS///////////
-function renderFighter (fighter,avatar,stat) {
+function renderFighter (fighter,image,stat) {
   var fighter = fighter;
-  var avatar = avatar;
+  var image = image;
   var stat = stat;
   var select = select
-  avatar.setAttribute('src', fighter.img);
-  avatar.setAttribute('alt', fighter.name);
+  image.setAttribute('src', fighter.img);
+  image.setAttribute('alt', fighter.name);
   var fighterStats = document.createElement('h3');
   fighterStats.textContent = 'FIGHTER STATS';
   stat.appendChild(fighterStats);

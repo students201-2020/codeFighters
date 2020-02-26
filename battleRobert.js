@@ -3,6 +3,7 @@ var player = document.getElementById('player');
 var boss = document.getElementById('boss');
 var villian = {
   img : 'image/boss3.jpeg',
+  avatar : 'image/Robert avatar.png',
   name : boss,
   attack : 20,
   hp : 100,
@@ -13,14 +14,14 @@ function getFighter(key) {
   return JSON.parse(selectedFighter);
 }
 function rendervillan() {
-  boss.setAttribute('src', villian.img);
+  boss.setAttribute('src', villian.avatar);
   boss.setAttribute('alt', villian.name); 
 }
 
 function renderFighter() {
 
   console.log(selectedFighter);       
-  player.setAttribute('src', selectedFighter.img);
+  player.setAttribute('src', selectedFighter.avatar);
   player.setAttribute('alt', selectedFighter.name);  
 }
 rendervillan();
