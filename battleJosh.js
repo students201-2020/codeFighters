@@ -5,7 +5,7 @@ var villian2 = {
   img : 'image/boss2.jpeg',
   name : boss,
   attack : 20,
-  hp : 100,
+  hp : 110,
 }
 var selectedFighter =  getFighter('fighter');
 function getFighter(key) {

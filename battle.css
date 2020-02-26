@@ -4,6 +4,27 @@ body{
   height: 1000px;
   width: 100vw;
 }
+#RobertBody{
+  background-image: url(https://media.giphy.com/media/xemMxBWt9ZTJS/giphy.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2000px;
+}
+
+#JoshBody{
+  background-image: url(https://media.giphy.com/media/T6aRxf7n76L6M/giphy.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2000px;
+}
+
+#JacobBody{
+  background-image: url(https://media.giphy.com/media/kKfMgvj4N9itG/giphy.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2000px;
+}
+
 header{
   height: 20px;
   width: 100%;
@@ -16,7 +37,9 @@ main{
   width: 1600px;
 }
 h1{
-  font-size: 80px;
+  z-index: 2;
+  float: left;
+  font-size: 100px;
   text-align: center;
   font-family: 'Nosifer';
   color: red;
@@ -25,11 +48,11 @@ h1{
 section{
   height: 750px;
   width: 100%;
-  /* border-radius: 100px; */
-  border: 4px solid  red;
+  
 }
 
 img {
+  z-index: 1;
   height: 700px;
 
 }

@@ -4,8 +4,8 @@ var boss = document.getElementById('boss');
 var villian3 = {
   img : './image/boss1.jpeg',
   name : boss,
-  attack : 20,
-  hp : 100,
+  attack : 30,
+  hp : 120,
 }
 var selectedFighter =  getFighter('fighter');
 function getFighter(key) {
@@ -50,7 +50,7 @@ function QuestionsConstructor (question, answer){
 }
 
 new QuestionsConstructor ('Is `:last-child` a standard CSS pseudo-class?', 'yes');
-new QuestionsConstructor ('Is color `textcolor` used to change the text color of an element?', 'no');
+new QuestionsConstructor ('Is `textcolor` used to change the text color of an element?', 'no');
 new QuestionsConstructor ('Does a JavaScript function `expression` load when the interpreter reaches that line of code?', 'yes');
 new QuestionsConstructor ('Does a JavaScript function `declaration` load when the interpreter reaches that line of code?', 'no');
 new QuestionsConstructor ('Is `:border-radius` a standard CSS pseudo-class?', 'no');
