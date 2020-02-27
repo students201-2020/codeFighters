@@ -23,9 +23,9 @@ function Fighter (img,avatar,name,attack,hp) {
 }
 
 var FighterA = new Fighter('./image/knight.jpeg','image/joe avatar.png','Knight', 30, 120);
-var FighterB = new Fighter('./image/ninja.jpeg','image/Robs avatar.png','Ninja', 40, 80);
-var FighterC = new Fighter('./image/assassin.jpeg','image/jesse avatar.png', 'Assassin',50, 60);
-var FighterD = new Fighter('./image/brawler.jpeg','image/yasir avatar.png','Brawler', 30, 100);
+var FighterB = new Fighter('./image/ninja.jpeg','image/Robs avatar.png','Ninja', 50, 80);
+var FighterC = new Fighter('./image/assassin.jpeg','image/jesse avatar.png', 'Assassin', 60, 40);
+var FighterD = new Fighter('./image/brawler.jpeg','image/yasir avatar.png','Brawler', 40, 100);
 
 
 
