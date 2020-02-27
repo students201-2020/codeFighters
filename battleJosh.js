@@ -4,6 +4,7 @@ var player = document.getElementById('player');
 var bossIcon = document.getElementById('bossIcon');
 var boss = document.getElementById('boss');
 var buttonKiller = document.getElementById('buttonkiller');
+var audiobtn = document.getElementById('audio');
 var villian2 = {
   img : 'image/boss2.jpeg',
   avatar : 'image/josh avatar.png',
@@ -89,17 +90,42 @@ function game () {
         } 
     } 
     if (selectedFighter.hp > 0) {
-      alert('you win');    
+      alert('you win'); 
+      playSoudGranted();   
     } else {  
       buttonKiller.remove();
-      alert('you lost');  
+      alert('you lost');
+      playSoundDenied();  
     }     
   }
-  function textBlinker() {
-    $('.startgame').fadeOut(500);
-    $('.startgame').fadeIn(500);
+///////////////Audio sounds live here////////////////////
+  function playSoundJosh () {
+    console.log('HEY')
+    var audio = new Audio('image/josh battle music.ogg');
+    var audio2 = new Audio('image/josh battle music2.flac');
+    audio.play();
+    audio2.play();
   }
-  setInterval(blinker, 1000);
+
+  function playSoundGranted () {
+    console.log('HEY')
+    var audio = new Audio('image/access_granted.wav');
+
+    audio.play(); 
+  }
+  function playSoundDenied  () {
+
+    var audio = new Audio('image/access_denied audio.wav');
+
+    audio.play(); 
+
+  }
+///////////////////////////////////text blinker///////////////////
+  function textBlinker() {
+    document.getElementById('.startgame').fadeOut(500);
+    document.getElementById('.startgame').fadeIn(500);
+  }
+  setInterval(textBlinker, 1000);
     
   
     

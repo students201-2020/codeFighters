@@ -36,86 +36,40 @@ main {
   height: 950px;
   width: 1600px;
 }
+
+section{
+  border: red 4px solid;
+  height: 400px;
+  width: 100%;
+}
 h1{
-  z-index: 2;
+  position: absolute;
+  z-index: 1;
   float: left;
-  font-size: 100px;
+  font-size: 95px;
   text-align: center;
   font-family: 'Nosifer';
   color: red;
-  /*font-family: 'Monofett' ;*/
-}
-section{
-  height: 750px;
-  width: 100%;
-  
+
 }
 
-img {
-  display: relative;
+/* this are the plaryer cards that are at the top of the page */
+#bossIcon, #playerIcon{
   position: absolute;
-  z-index: 1;
-  height: 50%;
-
-}
-
-section img:first-child {
-  float: left;
-}
-section img:last-child{
-  float: right;
-}
-
-article button:first-child{
-  float: left;
-}
-
-article button:last-child{
-  float: right;
-}
-
-#bossIcon, #fighterIcon{
-  
-  margin-left: 0px auto;
   vertical-align: middle;
-  z-index: 4;
-  height: 400px;
+  height: 10px;
   border: 2px solid;
+  z-index: -1;
+
 }
+
 #bossIcon{
-  position: absolute;
-  top: 600px;
-  left: 400px;
+  height: 300px;
+  top: 60px;
+  
 }
 
-#fighterIcon{
-  position: absolute;
-  top: 600px;
-  left: 800px;
-
-}
-
-article {
-  margin: 0 auto;
-  height: 100px;
-  width: 300px;
-  border: 3px solid red;
-}
-
-article button {
-  border-radius: 0, 10px, 0, 10px;
-  margin: 0px auto;
-  /* text-align: center; */
-  /* position: relative; */
-  width: 150px;
-  height: 100px;
-  background-color: black;
-  color: white;
-  font-family: 'Monofett' ;
-  font-size: 25px;
-
-}
-.startgame{
+#startgame{
   font-family: 'Press Start 2P';
   font-size: large;
   height: 150px;
@@ -123,9 +77,75 @@ article button {
   border-radius: 100px;
 }
 
+#playerIcon{
+  height: 300px;
+  top: 60px;
+}
+/* player card and icon will be align here */
+#boss, bossIcon{
+  margin-right: auto;
+}
+
+#player, #playerIcon{
+  
+}
+
+/* this is where the actions is happening images on the bottom of the page */
+div{
+  border: 4px solid green;
+  height: 500px;
+  width: 100%;
+
+}
+#boss, #player{  
+  border: 10px solid rebeccapurple;
+  height: 350px;
+}
+
+/* articl holds the buttons for the next battle */
+article {
+  margin: 0 auto;
+  height: 100px;
+  width: 300px;
+  border: 3px;
+}
+
+article button:first-child{
+  float: left;
+}
+
+#bossIcon, article botton:last-child{
+  float:right;
+}
+
+article button {
+  border-radius: 20px;
+  border-color: rgba(221, 45, 39, 0.9); 
+  width: 150px;
+  height: 100px;
+  background-color: rgba(9, 9, 14, 0.7);
+  color: white;
+  font-family: 'Monofett' ;
+  font-size: 30px;
+
+}
 
 footer{
   background-color: rgba(214,200,200, 0.4);
   height: 20px;
   width: 100%;
 }
+
+#animates {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  /* background-color: red; */
+}
+
+#health {
+  width: 300px;
+  height: 50px;
+  position:fixed;
+  background-color: red;
+} 

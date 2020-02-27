@@ -3,7 +3,11 @@ var playerIcon = document.getElementById('playerIcon');
 var player = document.getElementById('player');
 var bossIcon = document.getElementById('bossIcon');
 var boss = document.getElementById('boss');
-var buttonKiller = document.getElementById('buttonkiller')
+var buttonKiller = document.getElementById('buttonkiller');
+///////////////audio lives here//////////////////
+var audiobtn = document.getElementById('audio');
+///////////////////// audio is above//////////////
+
 var villian = {
   img : 'image/boss3.jpeg',
   avatar : 'image/Robert avatar.png',
@@ -34,6 +38,27 @@ function renderFighter() {
 
 rendervillan();
 renderFighter();
+
+///////////////////animation fire ball lives here//////////////
+function move() {
+  var attack  = document.getElementById('animates');
+  var posX = 0;
+  var posY = 500;
+  var id = setInterval(frame,5);
+  attackMusic();
+  function frame () {
+    if(posX === 2000 ) {
+      clearInterval(id);
+    } else {
+      posX+= 5;
+      attack.style.top = posY +"px"
+      attack.style.right = posX +"px"
+    }
+
+  }
+
+}
+////////////////////////////////////////end of fire balls/////////////
 
 function playerAttack() {
   villian.hp -= selectedFighter.attack ;
@@ -91,13 +116,51 @@ function game () {
     } 
     if (selectedFighter.hp > 0) {
       alert('you win');
-      alert('click next to fight the evil boss Josh');    
-    } else {  
+      alert('click next to fight the evil boss Josh');
+      playSoundGranted();
+      move();    
+    } else {
+      move();
       buttonKiller.remove();
       alert('you lost'); 
-      alert('Hit the Back button to return to the homepage'); 
+      alert('Hit the Back button to return to the homepage');
+      playSoundDenied(); 
     }     
   }
+//////////////////////audio func lives here///////////////////
+function playSoundRobert () {
+  console.log('HEY')
+  var audio = new Audio('image/robertfiremusic.wav');
+  var audio2 = new Audio('image/robertmusic.wav');
+  var audio3 = new Audio('image/robertmusic.flac');
+  audio2.play();
+  audio.play();
+  // audio3.play();
+
+}
+function playSoundGranted () {
+  console.log('HEY')
+  var audio = new Audio('image/access_granted.wav');
+
+  audio.play(); 
+}
+function playSoundDenied  () {
+
+  var audio = new Audio('image/access_denied audio.wav');
+
+  audio.play(); 
+
+}
+
+function attackMusic () {
+ var loop = true;
+var audio = new Audio('image/robertfiremusic.wav');
+var audio2 = new Audio('image/attack music.wav');
+audio.loop;
+audio2.play();
+}
+/////////////////////text blinker lives here////////////////
+
   function textBlinker() {
     document.getElementById('.startgame')
     $('.startgame').fadeOut(500);
