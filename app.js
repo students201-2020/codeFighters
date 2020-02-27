@@ -11,7 +11,7 @@ var fighterThreeStats = document.getElementById('fighterThreeStats');
 
 var fighterFour = document.getElementById('fighterFour');
 var fighterFourStats = document.getElementById('fighterFourStats');
-
+var gameSound1 = document.getElementById('gameSound1');
 ////// FIGHTER CONSTRUCTOR FUNCTION ////////////
 function Fighter (img,avatar,name,attack,hp) {
   this.img = img;
@@ -84,3 +84,18 @@ fighterFour.addEventListener('click', handleClicks);
 
 
 
+function playsound1 () {
+  console.log('HEY')
+  var audio = new Audio('image/game song.mp3');
+  
+  audio.play();
+ 
+}
+
+function playsoundNext () {
+  console.log('HEY')
+  var audio = new Audio('image/access_granted.wav');
+  
+  audio.play();
+ 
+}

@@ -1,8 +1,10 @@
 'use strict';
+var health = document.getElementById('health');
 var playerIcon = document.getElementById('playerIcon');
 var player = document.getElementById('player');
 var bossIcon = document.getElementById('bossIcon');
 var boss = document.getElementById('boss');
+// var audiobtn = document.getElementById('audio');
 var villian = {
   img : 'image/boss3.jpeg',
   avatar : 'image/Robert avatar.png',
@@ -34,19 +36,38 @@ function renderFighter() {
 rendervillan();
 renderFighter();
 
+function move() {
+  var attack  = document.getElementById('animates');
+  var posX = 0;
+  var posY = 500;
+  var id = setInterval(frame,5);
+  attackMusic();
+  function frame () {
+    if(posX === 2000 ) {
+      clearInterval(id);
+    } else {
+      posX+= 5;
+      attack.style.top = posY +"px"
+      attack.style.right = posX +"px"
+    }
+
+  }
+
+}
+
 function playerAttack() {
   villian.hp -= selectedFighter.attack ;
- 
- return villian.hp;
+  
+return villian.hp;
+
 }
+
 function villianAttack() {
   selectedFighter.hp -= villian.attack ;
-
   return selectedFighter.hp;
-
 }
 
-player.addEventListener('click', game);
+// player.addEventListener('click', game);
 
 var answerArray = [];
 var questionsArray = [];
@@ -78,11 +99,16 @@ new QuestionsConstructor ('Does the following code `<script href="app.js"></scri
 
 
 function game () {
+ 
     for (var i = 0; i < answerArray.length && selectedFighter.hp > 0 && villian.hp > 0; i ++) {
+    
         var ques = prompt (questionsArray[i])
         if(answerArray[i]=== ques) {
+      
         playerAttack();
+        
         alert('player' + selectedFighter.hp + ', boss' + villian.hp);
+        
         } else {
         villianAttack();
         alert('player' + selectedFighter.hp + ', boss' + villian.hp);
@@ -90,18 +116,50 @@ function game () {
     } 
     if (selectedFighter.hp > 0) {
       alert('you win');
-      alert('click next to fight the evil boss Josh');    
-    } else {  
+      alert('click next to fight the evil boss Josh');
+      playSoundGranted(); 
+       move();    
+    } else { 
+      move(); 
       alert('you lost'); 
-      alert('Hit the Back button to return to the homepage'); 
-    }     
+      alert('Hit the Back button to return to the homepage');
+      playSoundDenied();
+    } 
+      
   }
     
-  
+  function playSoundRobert () {
+    console.log('HEY')
+    var audio = new Audio('image/robertfiremusic.wav');
+    var audio2 = new Audio('image/robertmusic.wav');
+    var audio3 = new Audio('image/robertmusic.flac');
+    audio2.play();
+    audio.play();
+    // audio3.play();
+   
+  }
+  function playSoundGranted () {
+    console.log('HEY')
+    var audio = new Audio('image/access_granted.wav');
     
+    audio.play(); 
+  }
 
- 
- 
+  function playSoundDenied  () {
+
+    var audio = new Audio('image/access_denied audio.wav');
+    
+    audio.play(); 
+
+  }
+
+ function attackMusic () {
+   var loop = true;
+  var audio = new Audio('image/robertfiremusic.wav');
+  var audio2 = new Audio('image/attack music.wav');
+  audio.loop;
+  audio2.play();
+ }
 
 
 

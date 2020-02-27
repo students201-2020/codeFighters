@@ -94,20 +94,12 @@ function game () {
     }     
   }
     
-  
-    
-
+///// plays music ////////
+  function playSoundJacob () {
+    console.log('HEY')
+    var audio = new Audio('image/jacob battle music.mp3');
+    var audio2 = new Audio('image/jacobThunder.wav');
+    audio.play();
+    audio2.play();
+  }
  
- 
-
-
-
-
-
-
-
-
-
-
-
-
