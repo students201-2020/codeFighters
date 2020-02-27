@@ -47,7 +47,7 @@ function villianAttack() {
 
 }
 
-player.addEventListener('click', game);
+// player.addEventListener('click', game);
 
 var answerArray = [];
 var questionsArray = [];
@@ -98,7 +98,12 @@ function game () {
       alert('Hit the Back button to return to the homepage'); 
     }     
   }
-    
+  function textBlinker() {
+    document.getElementById('.startgame')
+    $('.startgame').fadeOut(500);
+    $('.startgame').fadeIn(500);
+  }
+  setInterval(textBlinker, 1000);
   
     
 

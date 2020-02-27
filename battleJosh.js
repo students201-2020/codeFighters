@@ -95,6 +95,11 @@ function game () {
       alert('you lost');  
     }     
   }
+  function textBlinker() {
+    $('.startgame').fadeOut(500);
+    $('.startgame').fadeIn(500);
+  }
+  setInterval(blinker, 1000);
     
   
     

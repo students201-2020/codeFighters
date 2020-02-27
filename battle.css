@@ -1,7 +1,7 @@
 body{
   margin:0px;
   background-color: black;
-  height: 1000px;
+  height: 900px;
   width: 100vw;
 }
 #RobertBody{
@@ -30,7 +30,7 @@ header{
   width: 100%;
 
 }
-main{
+main {
   margin: 0px auto;
   background-color: rgba(214,213,232, 0.2);
   height: 950px;
@@ -52,8 +52,10 @@ section{
 }
 
 img {
+  display: relative;
+  position: absolute;
   z-index: 1;
-  height: 700px;
+  height: 50%;
 
 }
 
@@ -70,6 +72,27 @@ article button:first-child{
 
 article button:last-child{
   float: right;
+}
+
+#bossIcon, #fighterIcon{
+  
+  margin-left: 0px auto;
+  vertical-align: middle;
+  z-index: 4;
+  height: 400px;
+  border: 2px solid;
+}
+#bossIcon{
+  position: absolute;
+  top: 600px;
+  left: 400px;
+}
+
+#fighterIcon{
+  position: absolute;
+  top: 600px;
+  left: 800px;
+
 }
 
 article {
@@ -91,6 +114,13 @@ article button {
   font-family: 'Monofett' ;
   font-size: 25px;
 
+}
+.startgame{
+  font-family: 'Press Start 2P';
+  font-size: large;
+  height: 150px;
+  width: 275px;
+  border-radius: 100px;
 }
 
 
