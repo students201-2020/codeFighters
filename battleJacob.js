@@ -58,13 +58,13 @@ function QuestionsConstructor (question, answer){
 
 new QuestionsConstructor ('Is `:last-child` a standard CSS pseudo-class?', 'yes');
 new QuestionsConstructor ('Is `textcolor` used to change the text color of an element?', 'no');
-new QuestionsConstructor ('Does a JavaScript function `expression` load when the interpreter reaches that line of code?', 'yes');
-new QuestionsConstructor ('Does a JavaScript function `declaration` load when the interpreter reaches that line of code?', 'no');
+new QuestionsConstructor ('Are JavaScript functions defined with `function` keyword?', 'yes');
+new QuestionsConstructor ('Are declared functions executed immediately?', 'no');
 new QuestionsConstructor ('Is `:border-radius` a standard CSS pseudo-class?', 'no');
-new QuestionsConstructor ('Are HTML attributes and CSS declarations examples of key-value pairs?', 'yes');
-new QuestionsConstructor ('Does the content of inline elemnts determine their default width?', 'yes');
-new QuestionsConstructor ('Do all HTML elements with inline display change to block display?', 'no');
-new QuestionsConstructor ('Can an inline element have margin?', 'yes');
+new QuestionsConstructor ('Can a function expression be stored in a variable?', 'yes');
+new QuestionsConstructor ('Can JavaScript functions be called before they are declared?', 'yes');
+new QuestionsConstructor ('Can JavaScript change HTML contents?', 'yes');
+new QuestionsConstructor ('Can JavaScript change CSS styles?', 'yes');
 new QuestionsConstructor ('Is margin>border>padding>content, the outside-in ordering of the CSS box model?', 'yes');
 new QuestionsConstructor ('Is a function inside of an object called a method?', 'yes');
 new QuestionsConstructor ('Can you put a function inside a constructor function?', 'yes');
