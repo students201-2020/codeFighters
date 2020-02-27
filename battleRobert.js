@@ -65,7 +65,6 @@ new QuestionsConstructor ('Does CSS stand for Cascading Style Sheets?', 'yes');
 new QuestionsConstructor ('Does Math.random() generate a random number between 1 and 100?', 'no');
 new QuestionsConstructor ('Can LinkedIn be used as a networking tool?', 'yes');
 new QuestionsConstructor ('Does Math.random() generate a random number between 0 and 1?', 'yes');
-new QuestionsConstructor ('Would you not want to use HTML5 because it offers you less options within the HTML document?', 'no');
 new QuestionsConstructor ('Can you add elements to HTML using JavaScript?', 'yes');
 new QuestionsConstructor ('Can you style an element using HTML?', 'yes');
 new QuestionsConstructor ('Can `break` be used to exit a loop?', 'yes');
