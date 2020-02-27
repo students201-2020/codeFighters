@@ -33,14 +33,14 @@ main {
   width: 1600px;
 }
 section{
-  height: 400px;
+  height: 300px;
   width: 100%;
 }
 h1{
   position: absolute;
   z-index: 1;
-  float: left;
-  font-size: 95px;
+  float: center;
+  font-size: 90px;
   text-align: center;
   font-family: 'Nosifer';
   color: red;
@@ -89,50 +89,51 @@ div{
   float: left;
 }
 /* articl holds the buttons for the next battle */
+#robertcontainer {
+  width: 567px;
+  
+}
 article {
+  
   margin: 0 auto;
-  height: 100px;
+  height: 110px;
   width: 300px;
-  border: 3px;
+  /* border: 3px solid red; */
 }
 article button:first-child{
   float: left;
+  color: white;
+  font-family: 'Monofett' ;
+  font-size: 30px;
+  border-radius: 20px;
+  border-color: rgba(221, 45, 39, 0.9);
+  background-color: rgba(9, 9, 14, 0.7);
+  height: 100px;
 }
+
 #bossIcon, article button:last-child{
   float:right;
-}
- *.nextbutton {
-  border-radius: 20px;
-  border-color: rgba(221, 45, 39, 0.9); 
-  width: 150px;
-  height: 100px;
-  background-color: rgba(9, 9, 14, 0.7);
   color: white;
   font-family: 'Monofett' ;
   font-size: 30px;
-}
-#JaboButton{
-  width: 200px;
-  height: 110px;
   border-radius: 20px;
-  border-color: rgba(221, 45, 39, 0.9); 
+  border-color: rgba(221, 45, 39, 0.9);
   background-color: rgba(9, 9, 14, 0.7);
-  color: white;
-  font-family: 'Monofett' ;
-  font-size: 30px;
+}
+ 
 
-}
 footer{
-  background-color: rgba(214,200,200, 0.4);
+  
   height: 20px;
   width: 100%;
 }
+
 #animates {
   width: 10px;
   height: 10px;
   position: absolute;
-  /* background-color: red; */
 }
+
 #health {
   width: 300px;
   height: 50px;

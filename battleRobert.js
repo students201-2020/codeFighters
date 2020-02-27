@@ -164,9 +164,9 @@ audio2.play();
 /////////////////////text blinker lives here////////////////
 
   function textBlinker() {
-    document.getElementById('.startgame')
-    $('.startgame').fadeOut(500);
-    $('.startgame').fadeIn(500);
+  
+    document.getElementById('.startgame').fadeOut(500);
+    document.getElementById('.startgame').fadeIn(500);
   }
   setInterval(textBlinker, 1000);
   
