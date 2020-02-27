@@ -91,6 +91,7 @@ function playsound1 () {
   console.log('HEY')
   var audio = new Audio('image/game song.mp3');
 
+  audio.loop = true;
   audio.play();
 
 }

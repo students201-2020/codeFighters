@@ -58,7 +58,7 @@ function QuestionsConstructor (question, answer){
   answerArray.push(this.answer)
 }
 
-new QuestionsConstructor ('Does `&&` represent the conitional `or`?', 'no');
+new QuestionsConstructor ('Does `&&` represent the conditional `or`?', 'no');
 new QuestionsConstructor ('Does `||` represent the conditional `and`?', 'no');
 new QuestionsConstructor ('Do you use the `<script></script>` tags to link JavaScript to HTML?', 'yes');
 new QuestionsConstructor ('Can you push from a function into an array?', 'yes');
@@ -103,7 +103,12 @@ function game () {
     console.log('HEY')
     var audio = new Audio('image/josh battle music.ogg');
     var audio2 = new Audio('image/josh battle music2.flac');
+    
+    audio.loop = true;
+    audio2.loop = true;
+    
     audio.play();
+    
     audio2.play();
   }
 

@@ -99,7 +99,9 @@ function game () {
     console.log('HEY')
     var audio = new Audio('image/jacob battle music.mp3');
     var audio2 = new Audio('image/jacobThunder.wav');
+    audio.loop = true;
     audio.play();
+    audio2.loop = true;
     audio2.play();
   }
     

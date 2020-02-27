@@ -155,7 +155,10 @@ function attackMusic () {
  var loop = true;
 var audio = new Audio('image/robertfiremusic.wav');
 var audio2 = new Audio('image/attack music.wav');
+
+audio.loop = true;
 audio.loop;
+audio2.loop = true;
 audio2.play();
 }
 /////////////////////text blinker lives here////////////////
