@@ -80,7 +80,7 @@ for(var i = 0; i < allFighters.length; i++) {
  }
 
 }
-// console.log(localStorage);
+
 fighterOne.addEventListener('click' , handleClicks);
 fighterTwo.addEventListener('click' , handleClicks);
 fighterThree.addEventListener('click' , handleClicks);
