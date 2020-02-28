@@ -1,4 +1,5 @@
 'use strict;'
+
 var allFighters = [];
 var fighterOne = document.getElementById('fighterOne');
 var fighterOneStats = document.getElementById('fighterOneStats');
@@ -12,8 +13,8 @@ var fighterThreeStats = document.getElementById('fighterThreeStats');
 var fighterFour = document.getElementById('fighterFour');
 var fighterFourStats = document.getElementById('fighterFourStats');
 
-///////////audio lives here//////////////
-var gameSound1 = document.getElementById('gameSound1');
+
+
 
 ////// FIGHTER CONSTRUCTOR FUNCTION ////////////
 function Fighter (img,avatar,name,attack,hp) {
@@ -77,7 +78,7 @@ for(var i = 0; i < allFighters.length; i++) {
     setProductData ('fighter',allFighters[i])
   }
  }
- alert('Click the Enter button to move to the battlefield');
+
 }
 // console.log(localStorage);
 fighterOne.addEventListener('click' , handleClicks);
@@ -87,22 +88,14 @@ fighterFour.addEventListener('click', handleClicks);
 
 
 ////////////////audio func lives here/////////////////////
-function playsound1 () {
+function playsound () {
   console.log('HEY')
   var audio = new Audio('image/game song.mp3');
-
   audio.loop = true;
   audio.play();
 
 }
 
-function playsoundNext () {
-  console.log('HEY')
-  var audio = new Audio('image/access_granted.wav');
-
-  audio.play();
-
-} 
 
 
 

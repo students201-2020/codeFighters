@@ -1,4 +1,5 @@
 'use strict';
+playSoundJosh(); 
 var playerIcon = document.getElementById('playerIcon');
 var player = document.getElementById('player');
 var bossIcon = document.getElementById('bossIcon');
@@ -34,6 +35,26 @@ function renderFighter() {
 }
 rendervillan2();
 renderFighter();
+function attackPlayer() {
+  var attack  = document.getElementById('animates');
+  var posX = 200;
+  var posY = 650;
+  var id = setInterval(frame,5);
+  attackMusic();
+  function frame () {
+    if(posX === 1565 ) {
+      clearInterval(id);
+      boss.remove();
+      animates.remove();
+    } else {
+      posX+= 5;
+      attack.style.top = posY +"px"
+      attack.style.left = posX +"px"
+    }
+
+  }
+
+}
 
 function playerAttack() {
   villian2.hp -= selectedFighter.attack ;
@@ -90,18 +111,19 @@ function game () {
         } 
     } 
     if (selectedFighter.hp > 0) {
+      attackPlayer();
       alert('you win'); 
-      playSoudGranted();   
+      
     } else {  
       buttonKiller.remove();
       alert('you lost');
-      playSoundDenied();  
+       
     }     
   }
 ///////////////Audio sounds live here////////////////////
   function playSoundJosh () {
     console.log('HEY')
-    var audio = new Audio('image/josh battle music.ogg');
+    var audio = new Audio('image/LuckyLittleSpookyAmbience.flac');
     var audio2 = new Audio('image/josh battle music2.flac');
     
     audio.loop = true;
@@ -125,6 +147,17 @@ function game () {
     audio.play(); 
 
   }
+
+  function attackMusic () {
+    var loop = true;
+   var audio = new Audio('image/robertfiremusic.wav');
+   var audio2 = new Audio('image/attack music.wav');
+   
+   
+   audio.loop;
+   
+   audio2.play();
+   }
 ///////////////////////////////////text blinker///////////////////
   function textBlinker() {
     document.getElementById('.startgame').fadeOut(500);
