@@ -1,4 +1,5 @@
 'use strict';
+playSoundJacob(); 
 var playerIcon = document.getElementById('playerIcon');
 var player = document.getElementById('player');
 var bossIcon = document.getElementById('bossIcon');
@@ -32,6 +33,26 @@ function renderFighter() {
 }
 rendervillan3();
 renderFighter();
+function attackPlayer() {
+  var attack  = document.getElementById('animates');
+  var posX = 200;
+  var posY = 650;
+  var id = setInterval(frame,5);
+  attackMusic();
+  function frame () {
+    if(posX === 1500 ) {
+      clearInterval(id);
+      boss.remove();
+      animates.remove();
+    } else {
+      posX+= 5;
+      attack.style.top = posY +"px"
+      attack.style.left = posX +"px"
+    }
+
+  }
+
+}
 
 function playerAttack() {
   villian3.hp -= selectedFighter.attack ;
@@ -88,6 +109,7 @@ function game () {
         } 
     } 
     if (selectedFighter.hp > 0) {
+      attackPlayer();
       alert('You win, however you still need to pass the entrance exam for 301 to get past me!');    
     } else {  
       alert('You lose, you have to take 201 again!');  
@@ -96,16 +118,25 @@ function game () {
 
   ///// plays music ////////
   function playSoundJacob () {
-    console.log('HEY')
+    
     var audio = new Audio('image/jacob battle music.mp3');
     var audio2 = new Audio('image/jacobThunder.wav');
     audio.loop = true;
-    audio.play();
     audio2.loop = true;
+    audio.play();
     audio2.play();
   }
     
-  
+  function attackMusic () {
+    var loop = true;
+   var audio = new Audio('image/robertfiremusic.wav');
+   var audio2 = new Audio('image/attack music.wav');
+   
+   
+   audio.loop;
+   
+   audio2.play();
+   }
     
 
  

@@ -1,4 +1,5 @@
 'use strict';
+playSoundRobert();
 var playerIcon = document.getElementById('playerIcon');
 var player = document.getElementById('player');
 var bossIcon = document.getElementById('bossIcon');
@@ -40,25 +41,31 @@ rendervillan();
 renderFighter();
 
 ///////////////////animation fire ball lives here//////////////
-function move() {
+
+function attackPlayer() {
   var attack  = document.getElementById('animates');
-  var posX = 0;
-  var posY = 500;
+  var posX = 200;
+  var posY = 650;
   var id = setInterval(frame,5);
   attackMusic();
   function frame () {
-    if(posX === 2000 ) {
+    if(posX === 1500 ) {
       clearInterval(id);
+      boss.remove();
+      animates.remove();
     } else {
       posX+= 5;
       attack.style.top = posY +"px"
-      attack.style.right = posX +"px"
+      attack.style.left = posX +"px"
     }
 
   }
 
 }
 ////////////////////////////////////////end of fire balls/////////////
+alert('The game is to answer the questions correctly, If you win you get to ascend to the next arena.');
+alert('Answers ARE ONLY  yes or no typed in full with no uppercases.');
+alert('To start the game, CLICK on your fighter avatar');
 
 function playerAttack() {
   villian.hp -= selectedFighter.attack ;
@@ -72,7 +79,7 @@ function villianAttack() {
 
 }
 
-// player.addEventListener('click', game);
+player.addEventListener('click', game);
 
 var answerArray = [];
 var questionsArray = [];
@@ -114,16 +121,18 @@ function game () {
         } 
     } 
     if (selectedFighter.hp > 0) {
+      attackPlayer();
+      
       alert('you win');
       alert('click next to fight the evil boss Josh');
-      playSoundGranted();
-      move();    
+        
     } else {
-      move();
+     
+    
       buttonKiller.remove();
       alert('you lost'); 
       alert('Hit the Back button to return to the homepage');
-      playSoundDenied(); 
+     
     }     
   }
 //////////////////////audio func lives here///////////////////
@@ -131,34 +140,19 @@ function playSoundRobert () {
   console.log('HEY')
   var audio = new Audio('image/robertfiremusic.wav');
   var audio2 = new Audio('image/robertmusic.wav');
-  var audio3 = new Audio('image/robertmusic.flac');
   audio2.play();
   audio.play();
-  // audio3.play();
-
 }
-function playSoundGranted () {
-  console.log('HEY')
-  var audio = new Audio('image/access_granted.wav');
 
-  audio.play(); 
-}
-function playSoundDenied  () {
-
-  var audio = new Audio('image/access_denied audio.wav');
-
-  audio.play(); 
-
-}
 
 function attackMusic () {
  var loop = true;
 var audio = new Audio('image/robertfiremusic.wav');
 var audio2 = new Audio('image/attack music.wav');
 
-audio.loop = true;
+
 audio.loop;
-audio2.loop = true;
+
 audio2.play();
 }
 /////////////////////text blinker lives here////////////////
